@@ -1,0 +1,70 @@
+Para vincular el ccs en el html usamos lo siguiente
+<link rel="stylesheet" href="Ruta_de_ubicación_archivo_css">
+
+Estamos manejando 3 clases de selectores
+
+-De tipo: En este caso en documento css se llama directamente por el nombre de la etiquta en html
+-De clase: en la etiqueta html se le incluye class="", y en el css se llama por el nombre iniciando con . 
+-Por id: en la etiqueta html se le incluye id="", y en el documento css se llama por el id iniciando con #
+
+El formato general para los selectores quedá así
+
+#title {
+       color:hotpink;
+ }
+Esto contiene propiedades que són las características que se le pueden dar a los elementos de html, y los valores que de asignamos a esas propiedades.
+
+En la página cssreference.io podemos encontrar información sobre las propiedades de css
+
+En la página htmlcolorcodes.com/es/ podemos encontrar colores para css
+
+En la página css-tricks.com/snippets/css/a-guide-to-flexbox/ podemos encontrar info de flexbox.
+
+En la consola del navegador podemos cambiar los valores para inspeccionar como quedan al modificalos.
+
+En Css hay muchos tipos de display que nos dicen como están estructurados nuestros elementos de html en 
+la web, dentro los que resaltan principalmente los siguientes por el espacio que ocupan en el navegador:
+
+-Display Inline: Si el espacio en pantalla ocupa sólo una pequeña porción
+-Display Blog: Ocupa toda la pantalla de izquierda a derecha.
+-Display Inline Blog: Contiene la flexibilidad contener las características de las dos anteriores.
+
+Flexbox: Es una herramienta que permite alinear elementos y posicionarlos en la web. Consta de elementos
+contenedores y los elementos que contiene que son los elementos hijos. Nos permite alinear de manera 
+vertical u horizontal los elementos a los que llamemos con esta propiedad en html en el documento css,
+la dirección se la podemos dar en column o row, como se ve en el siguiente ejemplo:
+
+#seleccionar-mascota{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+Todos los cambios podemos irlos viendo en la consola del navegador, antes de pasarla directamente al 
+documento css, para ir revisando el ajuste de las modificaciones, y cuando se acomode copiarlos y pegarlos
+directamente en el css.
+
+En html existe un modelo de caja que está compuesto por cuatro cuadros, contenidos uno dentro de otro
+hasta llegar al más pequeño, muestran el tamaño del ancho y del alto de la caja. Del más pequeño
+al más grande están representados por el contenido,  el espacio entre el continido y el borde de la caja
+o padding, el borde, y el margen que lo separa de otros elementos en el documento html. Un ejemplo de como
+funciona este es:
+
+.tarjeta-de-mokepon{
+     width: 100px;
+     height: 100px;
+     background: aquamarine;
+     padding: 10px;  -> Da un espaciado interno entre el contenido y el borde de la caja
+     box-sizing: border-box;  -> Esta propiedad da un tamaño automatico para que la caja no cambie con el
+     margin: 10px;                                                                    tamaño del padding
+     border: 1px solid hotpink; -> solid es un valor que significa las puntas rectas.
+}
+
+Algunas herramientas que podemos utilizar para realizar nuestro diseño son:
+
+- fonts.google.com/
+- pinteres.com
+- colorhunt.co
+
+Al diseño de toda la página se le conoce como layout

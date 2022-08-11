@@ -1,0 +1,45 @@
+input: <input type="" /> Deja una caja de texto o de otro tipo 
+de dato para ingresar por el usuario. Los tipos de datos pueden
+ser: "number", "text", "time", "date", "radio" este último 
+arroja en pantalla un pequeño círculo para seleccionar, "checkbox" 
+que es una cajita que permite a diferencia de radio seleccionar y deseleccionar
+
+input type="" name="" en name se le dá un nombre al grupo al que pertenece
+algunos de los imputs.
+
+input type="" name="" id="" el id es el nombre propiamente del elemento
+al que pertenece el input
+
+label <label></label> Es una etiqueta que acompaña al input para distinguirlo
+de otros inputs y a diferencia del este se abre y se cierra
+
+<label for="capipepo>Capipepo</label> el for es usado
+con el mismo nombre del id del input para que el 
+usuario pueda seleccionar también el nombre 
+que acompaña el input
+
+span: <span>3</span> se utiliza para manejar valores variables en html
+a través de js
+
+input: <input type="" /> Deja una caja de texto o de otro tipo 
+de dato para ingresar por el usuario. Los tipos de datos pueden
+ser: "number", "text", "time", "date", "radio" este último 
+arroja en pantalla un pequeño círculo para seleccionar, "checkbox" 
+que es una cajita que permite a diferencia de radio seleccionar y deseleccionar
+
+input type="" name="" en name se le dá un nombre al grupo al que pertenece
+algunos de los imputs.
+
+input type="" name="" id="" el id es el nombre propiamente del elemento
+al que pertenece el input
+
+label <label></label> Es una etiqueta que acompaña al input para distinguirlo
+de otros inputs y a diferencia del este se abre y se cierra
+
+<label for="capipepo>Capipepo</label> el for es usado
+con el mismo nombre del id del input para que el 
+usuario pueda seleccionar también el nombre 
+que acompaña el input
+
+
+
