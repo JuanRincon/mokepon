@@ -4,17 +4,17 @@ let ataqueEnemigo
 let vidasJugador = 3 
 let vidasEnemigo = 3
 
-function iniciarJuego(){ //todo el código que se encuentra en la siguiente función es el que va a ejecutar cuando cargue el html, esta función es invocada con el método window.addEventListener('load', iniciarJuego), en las últimas líneas de este script.
+function iniciarJuego(){ //Invocada por el evento cargar ventana al cargar html al final del código.
 
-    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque') //Asigna leer por id 
+    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque') //Asigna leer por id en html 
     sectionSeleccionarAtaque.style.display = 'none' //con este método dejamos de mostrar algo en pantalla.
 
     let sectionReiniciar = document.getElementById('boton-reiniciar')
     sectionReiniciar.style.display = 'none'
 
     let botonMascotaJugador = document.getElementById('boton-mascota') //Se crea esta variable y le asignamos el valor por id del documento (boton-mascota)
-
-    botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador) //Se llama el metodo de escucha para la variable para el evento click y llama la función seleccionarMascotaJugador que da unas instrucciones más adelante
+    botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador) //Se llama el metodo de escucha para la variable para el evento click y llama la función seleccionarMascotaJugador
+    
     let botonFuego = document.getElementById('boton-fuego')//Variables y asignación de métodos de escucha 
     botonFuego.addEventListener('click', ataqueFuego)  //para los botones del tipo de ataque del 
     let botonAgua = document.getElementById('boton-agua') //evento click para invocar sus respectivas 
