@@ -68,3 +68,9 @@ Algunas herramientas que podemos utilizar para realizar nuestro diseño son:
 - colorhunt.co
 
 Al diseño de toda la página se le conoce como layout
+
+Algunas páginas que pueden ayudarnos con grid para css son:
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://cssgridgarden.com/#es
+http://flexboxfroggy.com/#es
+
