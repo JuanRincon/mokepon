@@ -147,12 +147,9 @@ function crearMensaje(resultado){ //Invoc desde f. ataqueAleatorioEnemigo para c
     ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo) 
 } 
 function crearMensajeFinal(resultadoFinal){ //Invocado desde f. revisarVidas, para enviar mensaje a html.
-    let sectionMensajes = document.getElementById('mensajes') 
+    let sectionMensajes = document.getElementById('resultado') 
 
-    let parrafo = document.createElement('p') 
-    parrafo.innerHTML = resultadoFinal
-
-    sectionMensajes.appendChild(parrafo) 
+    sectionMensajes.innerHTML = resultadoFinal
 
     let botonFuego = document.getElementById('boton-fuego') //Se asigna el método disabled a estos botones
     botonFuego.disabled = true                              //en esta f crearMensajeFinal, para deshabil
