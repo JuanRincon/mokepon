@@ -1,8 +1,3 @@
-let ataqueJugador  
-let ataqueEnemigo
-let vidasJugador = 3 
-let vidasEnemigo = 3
-
 const sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque') 
 const sectionReiniciar = document.getElementById('boton-reiniciar')
 const botonMascotaJugador = document.getElementById('boton-mascota') 
@@ -21,6 +16,51 @@ const spanVidasEnemigo = document.getElementById('vidas-enemigo')
 const sectionMensajes = document.getElementById('resultado')
 const ataquesDelJugador = document.getElementById('ataque-del-jugador')
 const ataquesDelEnemigo = document.getElementById('ataque-del-enemigo')
+
+let mokepones = [] //creamos este arreglo, y recibimos las variables por el método push
+let ataqueJugador  
+let ataqueEnemigo
+let vidasJugador = 3 
+let vidasEnemigo = 3
+
+class Mokepon {
+    constructor(nombre, foto, vida) { //aquí asignamos las propiedades.
+        this.nombre = nombre  //aquí estamos asignando a la clase los valores de sus propiedades.
+        this.foto = foto
+        this.vida = vida
+        this.ataques = []
+    }
+}
+
+let hipodoge = new Mokepon('Hipodoge', './assets/hipodoge_attack.png', 5)//creamos los objetos de la clase
+let capipepo = new Mokepon('Capipepo', './assets/capipepo_attack.png', 5)
+let ratigueya = new Mokepon('Ratigueya', './assets/ratigueya_attack.png', 5)
+
+hipodoge.ataques.push(   //empujamos los siguientes elementos al arreglo ataques en el objeto hipodoge
+    { nombre: '💦', id: 'boton-agua' }, //ataques es una propiedad del objeto hipodoge
+    { nombre: '💦', id: 'boton-agua' }, //Esto que va entre las llaves son unos nuevos objetos, que
+    { nombre: '💦', id: 'boton-agua' }, //se llaman objetos literales, y son objetos que se crean
+    { nombre: '🔥', id: 'boton-fuego' }, //desde cero, a diferencia de los instanciados que ya vienen
+    { nombre: '🌱', id: 'boton-tierra' }, //desde la clase.
+)
+    
+capipepo.ataques.push( 
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '💦', id: 'boton-agua' },
+    { nombre: '🔥', id: 'boton-fuego' },
+)
+
+ratigueya.ataques.push( 
+    { nombre: '🔥', id: 'boton-fuego' },
+    { nombre: '🔥', id: 'boton-fuego' },
+    { nombre: '🔥', id: 'boton-fuego' },
+    { nombre: '💦', id: 'boton-agua' },
+    { nombre: '🌱', id: 'boton-tierra' },
+)
+
+mokepones.push(hipodoge, capipepo, ratigueya) //Envia las variables que agregemos a la variable mokepones
 
 function iniciarJuego(){ 
     sectionSeleccionarAtaque.style.display = 'none' 
