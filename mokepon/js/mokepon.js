@@ -16,10 +16,12 @@ const spanVidasEnemigo = document.getElementById('vidas-enemigo')
 const sectionMensajes = document.getElementById('resultado')
 const ataquesDelJugador = document.getElementById('ataque-del-jugador')
 const ataquesDelEnemigo = document.getElementById('ataque-del-enemigo')
+const contenedorTarjetas = document.getElementById('contenedorTarjetas')
 
 let mokepones = [] //creamos este arreglo, y recibimos las variables por el método push
 let ataqueJugador  
 let ataqueEnemigo
+let opcionDeMokepones
 let vidasJugador = 3 
 let vidasEnemigo = 3
 
@@ -66,6 +68,18 @@ function iniciarJuego(){
     sectionSeleccionarAtaque.style.display = 'none' 
     sectionReiniciar.style.display = 'none'
 
+    mokepones.forEach((mokepon) => { //Por cada uno de los elementos de nuestro arreglo mokepones has algo
+        opcionDeMokepones = `
+          <input type="radio" value="" name="mascotas" id=${mokepon.nombre}/>
+          <label class="tarjeta-de-mokepon" for=${mokepon.nombre}>
+            <p>${mokepon.nombre}</p>
+            <img src=${mokepon.foto} alt=${mokepon.nombre}>
+          </label> 
+          `
+
+    contenedorTarjetas.innerHTML += opcionDeMokepones 
+
+    })
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador) 
     botonFuego.addEventListener('click', ataqueFuego)  
     botonAgua.addEventListener('click', ataqueAgua) 
